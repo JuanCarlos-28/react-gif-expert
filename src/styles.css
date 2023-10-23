@@ -1,6 +1,7 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(187, 235, 235);
+
 }
 
 body {
@@ -29,8 +30,8 @@ h3 {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
 }
 
 .card {
@@ -72,4 +73,23 @@ button {
 
 button:hover {
     background-color: rgb(5, 218, 218);
+}
+
+@media (min-width: 468px) {
+    * {
+        background-color: rgb(66, 206, 206);
+    }
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    * {
+        background-color: rgb(234, 234, 234);
+    }
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
